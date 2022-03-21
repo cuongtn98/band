@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
-    <link rel="icon" href="assets/css/img/1200x630wa.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="assets/css/style.css"> 
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/themify-icons/themify-icons.css">
@@ -240,18 +239,35 @@
     <script>
         var header = document.getElementById('header');
         var mobileMenu = document.getElementById('mobile-menu');
-        
+        var headerHeight = header.clientHeight ;
+
+        // đóng mở menu 
 
         mobileMenu.onclick = function () {
-            var isClosed = header.clientHeight === 46 ;
+            var isClosed = header.clientHeight === headerHeight ;
             if (isClosed) {
                 header.style.height ='auto';
             } else {
-                header.style.height = '46px';
+                header.style.height = null;
             } 
         }
+
+        //  tự động đóng khi chọn menu  
+        
+        var menuItems = document.querySelectorAll('#nav li a[hrefz*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function () {
+                header.style.height = null;
+            }
+        }
+
+
+
     </script>
 
+        
 
 
     <script>

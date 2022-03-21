@@ -145,10 +145,16 @@ html {
     display: block;
     line-height: 46px;
 }
+#header .mobile-menu-btn {  
+    position: absolute;
+    top: 0;
+    right: 0;
+} 
 #header .mobile-menu-btn:hover {
     background-color: #ccc;
     
 }
+
 #header .mobile-menu-btn:hover .menu-icon {
     color: #000;
 }

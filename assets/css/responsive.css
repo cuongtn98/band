@@ -1,7 +1,18 @@
 
 
+@media (min-width : 740px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+}
+    
+
+
 /* mobile */
 @media (max-width : 740px ) {
+    #nav {
+        
+    }
     #nav li {
         display: block;
     }
@@ -9,7 +20,7 @@
     .search-btn {
         display:none ;
     }
-
+   
 
 
 }
