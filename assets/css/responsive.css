@@ -7,6 +7,9 @@
 }
     /* mobile vs taplet*/
 @media (max-width : 1023px ) { 
+    .img-chicago {
+        width: 100%;
+    }
     .btn {
         padding: 15px 16px;
     }
