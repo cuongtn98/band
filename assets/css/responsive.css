@@ -5,7 +5,30 @@
         display: none;
     }
 }
-    
+    /* mobile vs taplet*/
+@media (max-width : 1023px ) { 
+    .btn {
+        padding: 15px 16px;
+    }
+    .form-control {
+        padding: 15px;
+
+    }
+    #footer .social-list {
+        font-size: 24px;
+    }
+    #footer .social-list a {
+        padding: 0 8px;
+       
+    }
+    .contact-content .contact-info {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    .form-control {
+        margin-top: 8px;
+    }
+}
 
 
 /* mobile */
@@ -40,7 +63,9 @@
     #nav > li {
         display: block;
     }
-
+    .btn {
+        width: 100%;
+    }
     .search-btn {
         display:none ;
     }
@@ -48,4 +73,8 @@
        margin-top: 30px;
        width: 100%;
    }
+   .contact-content .contact-info {
+    width: 100%;
+}
+
 }

@@ -417,6 +417,7 @@ html {
 .contact-content .contact-info {
     font-size: 18px;
     line-height: 1.4;
+    display:block;
 }
 
 .contact-info i[class*="ti-"] {
